@@ -1,0 +1,52 @@
+@use "../abstract/variables" as var;
+@use "../abstract/mixins" as mx;
+.LetsGetToIt
+{
+  background-color: #eee;
+  padding: 120px 0 137px;
+}
+
+.LetsGetToIt > div 
+{
+  @include mx.flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LetsGetToIt h1
+{
+  font-size: 31px;
+  line-height: 36px;
+  color: var.$primary-color;
+  margin-bottom: 55px;
+}
+
+.LetsGetToIt-buttons 
+{
+  @include mx.flex;
+  justify-content: flex-start;
+  column-gap: 11px;
+}
+
+.LetsGetToIt-buttons button
+{
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.96px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 44px;
+  padding: 13px 25px;
+}
+
+.LetsGetToIt-buttons button:first-child
+{
+  background-color: #3d5675;
+  color: #fff;
+}
+
+.LetsGetToIt-buttons button:last-child
+{
+  background-color: #fff;
+  color: #3d5675;
+}

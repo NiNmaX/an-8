@@ -1,0 +1,59 @@
+@use "../abstract/mixins" as mx;
+.header 
+{
+  padding: 18px 0;
+}
+
+.header-navbar 
+{
+  @include mx.flex;
+}
+
+.header-navbar__logo img 
+{
+  width: 85px;
+  height: 24px;
+}
+
+.header-nav__menu 
+{
+  @include mx.flex;
+  column-gap: 45px;
+}
+
+.header-nav__link 
+{
+display: flex;
+justify-content: center;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 1.96px;
+text-transform: uppercase;
+&:hover 
+{
+  border-bottom: 1px solid #000;
+}
+}
+
+.star_icon
+{
+  margin-right: 14px;
+}
+
+.header-nav__form button 
+{
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.96px;
+  text-transform: uppercase;
+  background-color: transparent;
+  @include mx.flex;
+  justify-content: start;
+}
+
+.header-nav__form img 
+{
+  width: 24px;
+  height: 24px;
+  margin-left: 20px; 
+}

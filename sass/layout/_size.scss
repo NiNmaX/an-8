@@ -1,0 +1,56 @@
+@use "../abstract/variables" as var;
+@use "../abstract/mixins" as mx;
+.size
+{
+  background-color: #eee;
+}
+.size > div
+{
+  background-color: #ffca3a;
+  box-shadow: 0px 14px 44px rgba(143, 143, 143, 0.25);
+  padding: 160px 0 160px;
+}
+
+.size > div 
+{
+  @include mx.flex;
+  justify-content: space-evenly;
+}
+
+.size-card 
+{
+  width: 360px;
+  text-align: center;
+  h1
+  {
+    font-size: 24px;
+    line-height: 36px;
+    color: var.$primary-color;
+    margin-top: 24px 0 14px;
+  }
+  p
+  {
+    font-size: 15px;
+    line-height: 24px;
+    color: #3d5675;
+    margin-bottom: 23px;
+  }
+  button
+  {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 44px;
+    border: none;
+    padding: 13px 25px;
+  }
+} 
+
+.size-card__border 
+{
+  border-right: 1px solid rgba(161, 161, 161, 0.4);
+  height: 410px;
+}

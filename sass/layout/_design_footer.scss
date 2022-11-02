@@ -1,0 +1,18 @@
+@use "../abstract/mixins" as mx;
+.design__footer
+{
+ @include mx.flex;
+}
+
+.design__footer-text
+{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.text p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #777777;
+}
